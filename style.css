@@ -1,0 +1,220 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background-color: #fbf5e5; /* Light beige for a warm autumn feel */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/* Header and Logo Styling */
+.header {
+    width: 100%;
+    background-color: #3e4650; /* Dark gray for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.logo {
+    max-height: 60px;
+    width: auto;
+}
+
+/* Main Content Styling */
+.content {
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Page Title */
+.page-title {
+    color: #83372a; /* Dark red-brown for autumn theme */
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+/* Search Container Styling */
+.search-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+@media (min-width: 600px) {
+    .search-container {
+        flex-direction: row;
+    }
+}
+
+/* Search Bar Styling */
+.search-bar {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+.location-button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4a4a4a; /* Dark gray */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.location-button:hover {
+    background-color: #5b6572; /* Slightly lighter gray */
+}
+
+/* Map Styling */
+.map {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 768px) {
+    .map {
+        height: 500px;
+    }
+}
+
+/* Nearest Locations List Styling */
+.nearest-locations {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.nearest-locations h4 {
+    font-size: 1.2em;
+    color: #83372a; /* Dark autumnal color */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Location Item Styling */
+.location-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #fbf5e5; /* Light beige to match the body */
+    border: 1px solid #d68c45; /* Orange-brown border */
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.location-item:hover {
+    background-color: #f1e1c3; /* Slightly darker beige for hover effect */
+}
+
+/* Location Info Styling */
+.location-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.location-item strong {
+    font-size: 1.1em;
+    color: #4a2c2a; /* Dark red-brown */
+    margin-bottom: 5px;
+}
+
+.location-item .distance {
+    font-weight: bold;
+    color: #83372a; /* Dark autumnal color */
+    margin-top: 5px;
+}
+
+/* Stylish "Get Directions" Button */
+.directions-button {
+    padding: 8px 15px;
+    font-size: 0.9em;
+    background-color: #d68c45; /* Orange-brown button */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.directions-button:hover {
+    background-color: #c6793f; /* Slightly darker orange for hover */
+}
+
+/* Centered "Show More" Button */
+.show-more-button {
+    display: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #d68c45; /* Orange-brown */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 20px auto;
+    width: 100%;
+}
+
+.show-more-button:hover {
+    background-color: #c6793f;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 600px) {
+    .page-title {
+        font-size: 20px;
+    }
+
+    .search-bar,
+    .location-button {
+        font-size: 14px;
+    }
+
+    .map {
+        height: 300px;
+    }
+
+    .nearest-locations h4 {
+        font-size: 1em;
+    }
+}
+
+/* Custom Marker */
+.custom-marker {
+    background-color: #d68c45;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+}

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Vegan Treats Stockist</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+<body>
+    <!-- Logo Header -->
+    <header class="header">
+        <img src="./vegantreatslogo.png" alt="Vegan Treats Logo" class="logo">
+    </header>
+
+    <div class="content">
+        <h3 class="page-title">Vegan Treats Stockist</h3>
+
+        <!-- Location Input and Find My Location Button -->
+        <div class="search-container">
+            <input id="addressInput" type="text" placeholder="Enter your location" class="search-bar" />
+            <button onclick="getCurrentLocation()" class="location-button">Find My Location</button>
+        </div>
+
+        <!-- Map Display -->
+        <div id="map" class="map"></div>
+
+        <!-- Nearest Locations List -->
+        <div id="nearest-locations" class="nearest-locations"></div>
+
+        <!-- Show More Button -->
+        <button id="show-more-button" class="show-more-button" onclick="showMoreLocations()">Show More</button>
+    </div>
+
+    <!-- Load index.js -->
+    <script src="./index.js"></script>
+    <!-- Initialize Map -->
+    <script>
+        initMap();
+    </script>
+</body>
+</html>

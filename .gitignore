@@ -1,0 +1,20 @@
+# Node modules
+node_modules/
+
+# Logs
+*.log
+
+# Dependency lock files
+package-lock.json
+
+# Temporary or system files
+*.txt
+*.sh
+*.ps1
+
+# AWS-specific or environment files
+awsfetch.*
+distribution-config.json
+
+# Other unnecessary files
+output.txt
